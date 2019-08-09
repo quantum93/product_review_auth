@@ -32,8 +32,11 @@ The site should have functionality to review products so your database should in
 | Testing with Rspec and Shoulda Matchers        | rspec                                 | 2 examples, 0 failures |
 | Routing with Rails (Nested Routing with Rails) |                                       |                        |
 | creating Rails Controllers                     |                                       |                        |
-| creating Views with link_to method             |                                       |                        
-| creating Active Record Validations             | 
+| creating Views with link_to method             |                                       |                        |
+| creating Active Record Validations features    |                                       |                        |
+| creating database seeding using faker gem      |                                       |                        |
+
+
 ## Known Bugs
 
 _No known bugs_
@@ -49,6 +52,7 @@ _Please contact us if you have any issues at: taebumlee@gmail.com_
 * Atom
 * GitHub
 * Postgres DB 11.4
+* for faker practice, use the faker information on https://www.rubydoc.info/gems/faker/1.6.6#fakervehicle site for test.
 
 ### License
 _This software is licensed under MIT license._
