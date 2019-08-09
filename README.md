@@ -30,8 +30,9 @@ The site should have functionality to review products so your database should in
 | DB schema design for one-to-many relationship  | create reviews table                  |                        |
 | DB schema design for one-to-many relationship  | set up foreign_key with dependent     |                        |
 | Testing with Rspec and Shoulda Matchers        | rspec                                 | 2 examples, 0 failures |
-| Routing with Rails (Nested Routing with Rails) |  
-
+| Routing with Rails (Nested Routing with Rails) |                                       |                        |
+| creating Rails Controllers                     |                                       |                        |
+| creating Views with link_to method             |                                       |                        |
 ## Known Bugs
 
 _No known bugs_
