@@ -7,10 +7,19 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Product.destroy_all
 
-50.times do |index|
+50.times do
   Product.create!(name: Faker::Food.dish,
                   cost: Faker::Number.between(from: 5, to: 20),
                   country_of_origin: Faker::Address.country)
 end
-
 p "Created #{Product.count} products"
+
+250.times do
+  product_id = Product.all.sample.id
+  content_body = rand(50..250)
+  Review.create!(content_body: Faker::Lorem.paragraph_by_chars(number: content_body, supplemental: false),
+                rating: Faker::Number.between(from: 1, to: 5),
+                product_id: product_id,
+                author: Faker::Name.name)
+end
+p "Created #{Review.count} reviews"
