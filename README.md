@@ -35,7 +35,7 @@ The site should have functionality to review products so your database should in
 | creating Views with link_to method             |                                       |                                              |
 | creating Active Record Validations features    |                                       |                                              |
 | creating database seeding using faker gem      | rake db:seed                          | "Created 50 products", "Created 250 reviews" |
-
+| creating callbacks features with rspec test    | 
 
 ## Known Bugs
 
