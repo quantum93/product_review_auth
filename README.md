@@ -23,13 +23,14 @@ The site should have functionality to review products so your database should in
 * _postgres DB installation with sql script in project (if your Postgres DB is not starting at login, please execute "pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start" on terminal._
 
 ## Specs
-| Behavior                                      | Input                                 | Output                 |
-| --------------------------------------------- |:-------------------------------------:| ----------------------:|
-| DB schema design for one-to-many relationship | create products table                 |                        |
-| make CURD logic for application               | create model for product              |                        |
-| DB schema design for one-to-many relationship | create reviews table                  |                        |
-| DB schema design for one-to-many relationship | set up foreign_key with dependent     |                        |
-| Testing with Rspec and Shoulda Matchers       | rspec                                 | 2 examples, 0 failures |
+| Behavior                                       | Input                                 | Output                 |
+| ---------------------------------------------- |:-------------------------------------:| ----------------------:|
+| DB schema design for one-to-many relationship  | create products table                 |                        |
+| make CURD logic for application                | create model for product              |                        |
+| DB schema design for one-to-many relationship  | create reviews table                  |                        |
+| DB schema design for one-to-many relationship  | set up foreign_key with dependent     |                        |
+| Testing with Rspec and Shoulda Matchers        | rspec                                 | 2 examples, 0 failures |
+| Routing with Rails (Nested Routing with Rails) |  
 
 ## Known Bugs
 
