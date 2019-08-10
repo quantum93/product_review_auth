@@ -1,3 +1,15 @@
+<h1>The Recent Three Products</h1>
+
+<% if @recent_products.any? %>
+  <ul>
+    <% @recent_products.each do |product| %>
+      <li><%= link_to product.name, product_path(product) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no recent products yet.</p>
+<% end %>
+
 <h1>The Most Reviewed Products</h1>
 
 <% if @most_reviewed_products.any? %>
