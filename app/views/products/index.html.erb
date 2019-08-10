@@ -1,4 +1,32 @@
-<h1>Products</h1>
+<h1>The Most Reviewed Products</h1>
+
+<% if @most_reviewed_products.any? %>
+  <ul>
+    <% @most_reviewed_products.each do |product| %>
+      <li><%= link_to product.name, product_path(product) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no most reviewed products yet.</p>
+<% end %>
+
+<p><%= link_to "Create new product", new_product_path %></p>
+
+<h1>The Local Products from United States</h1>
+
+<% if @local_products.any? %>
+  <ul>
+    <% @local_products.each do |product| %>
+      <li><%= link_to product.name, product_path(product) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no local products yet from United States.</p>
+<% end %>
+
+<p><%= link_to "Create new product", new_product_path %></p>
+
+<h1>All Products Information</h1>
 
 <% if @products.any? %>
   <ul>
