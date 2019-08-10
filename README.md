@@ -21,6 +21,12 @@ The site should have functionality to review products so your database should in
 * _Type 'bundle install' in terminal to load Gems (if you have capybara version incompatible issue with current version of ruby, try "/Users/[User Name]/.rubies/ruby-2.6.3/bin/bundle install" instead of "bundle install"_
 * _To run tests, type 'rspec' in terminal_
 * _postgres DB installation with sql script in project (if your Postgres DB is not starting at login, please execute "pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start" on terminal._
+* _for database backup, please execute followings in terminal,
+* pg_dump [YOUR DATABASE NAME] > database_backup.sql
+* _for database restore after clone, please execute followings in terminal
+* createdb [DATABASE NAME]
+* psql [DATABASE_NAME] < database_backup.sql
+* createdb -T [DATABASE NAME] [TEST DATABASE NAME]
 
 ## Specs
 | Behavior                                       | Input                                 | Output                                       |
