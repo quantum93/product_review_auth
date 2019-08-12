@@ -17,3 +17,19 @@ describe Product do
     expect(product.country_of_origin()).to(eq("Republic of Korea"))
   end
 end
+
+# factory bot test
+describe Product do
+  it("titleizes the name of an product") do
+    product = FactoryBot.create(:product, :name => "bibimbop")
+    expect(product.name).to eq "Bibimbop"
+  end
+end
+
+describe Product do
+  it("titleizes the name of an product") do
+    product = FactoryBot.create(:product, :name => "hotdog")
+    expect(product.name).to eq "Hotdog"
+    # product.name.should eq "Hotdog"
+  end
+end

@@ -19,6 +19,10 @@ class Product < ApplicationRecord
   # scope for country_of_origin query
   scope :local_product, -> { ( where(country_of_origin: "United States").limit(5)) }
 
+  def foobar
+    "Hello Ben!"
+  end
+
   before_save(:titleize_product)
 
   private
